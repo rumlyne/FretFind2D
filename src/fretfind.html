@@ -1,4 +1,5 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <!-- 
 
@@ -527,6 +528,25 @@ Fret  P.D.    Fret  P.D.
                     </dl>
                 </dd>
             </dl>
+        </dd>
+        <dt>right angled fret</dt>
+        <dd>
+            <dl id="raFret" class="alternative">
+                <dt id="fret">fret</dt>
+                <dd><input type="text" id="raF" value="12" /></dd>
+                <dt id="nutorbridge">nut or bridge</dt>
+                <dd>
+                        <label><input type="radio" name="nutorbridge" value="bridge" />bridge</label>
+                        <label><input type="radio" name="nutorbridge" value="nut" checked="checked"/>nut</label>
+                </dd>
+            </dl>
+        </dd>
+        <dd class="help">
+            The fret which will be at a right angle to the fingerboard. 
+            Changing the default 12th fret can lead to a steeper bridge 
+            and shallower nut angle or the other way round. 
+            You can also set the nut or bridge to be horizontal. 
+            (Only works with equal calculation in multiscale mode.) 
         </dd>
         <dt>string width at the nut</dt>
         <dd><input type="text" id="nutWidth" value="1.375" /></dd>
